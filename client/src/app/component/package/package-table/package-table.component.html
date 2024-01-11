@@ -1,0 +1,50 @@
+<style>
+  .package-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .package-row {
+    background-color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  .package-row:hover {
+    background-color: #e6e6e6;
+  }
+
+  .package-table td,
+  .package-table th {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+  .package-table td {
+    text-align: left;
+    padding-left: 30px;
+    width: 50%;
+  }
+</style>
+
+<table class="package-table">
+  <tr class="package-row">
+    <td>Identification number</td>
+    <td>{{ package.id }}</td>
+  </tr>
+  <tr class="package-row">
+    <td>Content</td>
+    <td>{{ package.content }}</td>
+  </tr>
+  <tr class="package-row">
+    <td>Weight</td>
+    <td>{{ package.weight }}</td>
+  </tr>
+  <tr class="package-row">
+    <td>Delivery method</td>
+    <td>{{ package.deliveryMethod }}</td>
+  </tr>
+  <tr class="package-row">
+    <td>Status</td>
+    <td>{{ package.status }}</td>
+  </tr>
+</table>

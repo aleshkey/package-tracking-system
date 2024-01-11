@@ -1,0 +1,15 @@
+<table class="package-table">
+  <thead>
+  <!-- Заголовки столбцов -->
+  </thead>
+  <tbody>
+  <tr *ngFor="let package of packages" class="package-row">
+    <td class="image-cell"><img [src]="'assets/imgs/1450155.png'" class="package-image"></td>
+    <td (click)="navigateToDetails(package.id)">{{ package.content }}</td>
+    <td (click)="navigateToDetails(package.id)">{{ package.status }}</td>
+    <td class="image-cell">
+      <img [src]="'assets/imgs/trash.png'" (click)="delete(package.id)" class="package-image">
+    </td>
+  </tr>
+  </tbody>
+</table>
